@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment #2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Typescript Assignment By Hafiz Tamoor Iqbal</h1>
+
+    <div>
+      <h2>
+        1. Write a ts program to print all natural numbers from 1 to n. - using
+        while loop.
+      </h2>
+      <p>
+        <code>
+          let number: string | null = prompt("Please Enter Number");<br />
+          let output1 = document.getElementById("output1") as HTMLDivElement |
+          null;<br />
+          if(output1){output1.innerHTML = "All Natural Numbers is : "}<br />
+          if (number) {<br />
+          let num: number = parseInt(number);<br />
+          let start: number = 1;<br />
+          while (start <= num) {<br />
+          if (output1) {<br />
+          output1.innerHTML += start;<br />
+          start++;<br />
+          }<br />
+          }<br />
+          }<br />
+        </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output1"></code>
+      </p>
+      <button onclick="Question1()">natural numbers from 1 to n</button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+    <div>
+      <h2>
+        2. Write a ts program to print all natural numbers in reverse (from n to
+        1). - using while loop.
+      </h2>
+      <p>
+        <code>
+          var number = prompt("Please Enter Number");<br />
+          var output2 = document.getElementById("output2");<br />
+          if (output2) {<br />
+          output2.innerHTML = "All Natural Numbers in reverse : ";<br />
+          }<br />
+          if (number) {<br />
+          var num = parseInt(number);<br />
+          var end = 1;<br />
+          while (end <= num) {<br />
+          if (output2) {<br />
+          output2.innerHTML += num;<br />
+          num--;<br />
+          }<br />
+          }<br />
+          } <br />
+        </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output2"></code>
+      </p>
+      <button onclick="Question2()">reverse natural numbers from 1 to n</button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+
+    <div>
+      <h2>
+        3. Write a ts program to print all alphabets from a to z. - using while
+        loop.
+      </h2>
+      <p>
+        <code>
+          let output3 = document.getElementById("output3") as HTMLDivElement |
+          null;<br />
+          if (output3) {<br />
+          output3.innerHTML = "All alphabets from a to z : ";<br />
+          }<br />
+          let char: number = 97;<br />
+          while (char <= 122) {<br />
+          if (output3) {<br />
+          output3.innerHTML += String.fromCharCode(char);<br />
+          char++;<br />
+          }<br />
+          } <br />
+        </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output3"></code>
+      </p>
+      <button onclick="Question3()">alphabets from a to z</button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+
+    <div>
+      <h2>
+        4. Write a ts program to print all even numbers between 1 to 100. -
+        using while loop.
+      </h2>
+      <p>
+        <code>
+          let output4 = document.getElementById("output4") as HTMLDivElement |
+          null;<br />
+          if (output4) {<br />
+          output4.innerHTML = "All even numbers between 1 to 100 : ";<br />
+          }<br />
+          let start: number = 2;<br />
+          while (start <= 100) {<br />
+          if (output4) {<br />
+          output4.innerHTML += start ;<br />
+          start = start + 2;<br />
+          }<br />
+          }<br />
+        </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output4"></code>
+      </p>
+      <button onclick="Question4()">even numbers between 1 to 100</button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+
+    <div>
+      <h2>5. Write a ts program to print all odd number between 1 to 100.</h2>
+      <p>
+        <code>
+          let output5 = document.getElementById("output5") as HTMLDivElement |
+          null;<br />
+          if (output5) {<br />
+          output5.innerHTML = "All odd numbers between 1 to 100 : ";<br />
+          }<br />
+          let start: number = 1;<br />
+          while (start <= 100) {<br />
+          if (output5) {<br />
+          output5.innerHTML += start;<br />
+          start = start + 2;<br />
+          }<br />
+          } <br />
+        </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output5"></code>
+      </p>
+      <button onclick="Question5()">odd number between 1 to 100</button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+
+    <div>
+      <h2>
+        6. Write a ts program to find sum of all natural numbers between 1 to n.
+      </h2>
+      <p>
+        <code>
+          let number: string | null = prompt("Please Enter Number");<br />
+          let output6 = document.getElementById("output6") as HTMLDivElement |
+          null;<br />
+          if (number) {<br />
+          let num: number = parseInt(number);<br />
+          let start: number = 1;<br />
+          let sum: number = 0;<br />
+          while (start <= num) {<br />
+          if (output6) {<br />
+          sum += start;<br />
+          output6.innerHTML = `sum of all natural numbers between 1 to ${num} is
+          :${String(sum)}`;<br />
+          start++;<br />
+          }<br />
+          }<br />
+          }<br />
+        </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output6"> </code>
+      </p>
+      <button onclick="Question6()">
+        sum of all natural numbers between 1 to n
+      </button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+
+    <div>
+      <h2>
+        7. Write a ts program to find sum of all even numbers between 1 to n.
+      </h2>
+      <p>
+        <code>
+          let number: string | null = prompt("Please Enter Number");<br />
+          let output7 = document.getElementById("output7") as HTMLDivElement |
+          null;<br />
+          if (number) {<br />
+          let num: number = parseInt(number);<br />
+          let start: number = 2;<br />
+          let sum: number = 0;<br />
+          while (start <= num) {<br />
+          if (output7) {<br />
+          sum += start;<br />
+          output7.innerHTML =`sum of all even numbers between 1 to ${num} is :
+          ${String(sum)}`;<br />
+          start+=2;<br />
+          }<br />
+          }<br />
+          } <br />
+        </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output7"> </code>
+      </p>
+      <button onclick="Question7()">
+        sum of all even numbers between 1 to n
+      </button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+
+    <div>
+      <h2>
+        8. Write a ts program to find sum of all odd numbers between 1 to n.
+      </h2>
+      <p>
+        <code>
+          let number: string | null = prompt("Please Enter Number");<br />
+          let output6 = document.getElementById("output6") as HTMLDivElement |
+          null;<br />
+          if (number) {<br />
+          let num: number = parseInt(number);<br />
+          let start: number = 1;<br />
+          let sum: number = 0;<br />
+          while (start <= num) {<br />
+          if (output6) {<br />
+          sum += start;<br />
+          output6.innerHTML = `sum of all natural numbers between 1 to ${num} is
+          :${String(sum)}<br />`; start++;<br />
+          }<br />
+          }<br />
+          }<br />
+        </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output8"> </code>
+      </p>
+      <button onclick="Question8()">
+        sum of all odd numbers between 1 to n
+      </button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+    <div>
+      <h2>
+        9. Write a ts program to print multiplication table of any number.
+      </h2>
+      <p>
+        <code>
+          let number: string | null = prompt("Please Enter Number");<br />
+          let output9 = document.getElementById("output9") as HTMLDivElement |
+          null;<br />
+          if (output9) {<br />
+          output9.innerHTML = `multiplication table of ${number}`;<br />
+          }<br />
+          if (number) {<br />
+          let num: number = parseInt(number);<br />
+          let start: number = 1;<br />
+          while (start <= 10) {<br />
+          if (output9) {<br />
+          output9.innerHTML += "<br />" + `${num} x ${start} = ${num *
+          start}`;<br />
+          start++;<br />
+          }<br />
+          }<br />
+          }<br />
+        </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output9"> </code>
+      </p>
+      <button onclick="Question9()">multiplication table</button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+
+    <div>
+      <h2>10. Write a ts program to count number of digits in a number.</h2>
+      <p>
+        <code>
+          let number: string | null = prompt("Please Enter Number");<br />
+          let output10 = document.getElementById("output10") as HTMLDivElement |
+          null;<br />
+          if (output10) {<br />
+          output10.innerHTML = `count number of digits in a ${number} is : `;<br />
+          }<br />
+          if (number && output10) {<br />
+          output10.innerHTML += number.length;<br />
+          }<br />
+        </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output10"> </code>
+      </p>
+      <button onclick="Question10()">count number of digits</button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+
+    <div>
+      <h2>11. Write a ts program to find first and last digit of a number.</h2>
+      <p>
+        <code>
+          let number: string | null = prompt("Please Enter Number");<br />
+          let output11 = document.getElementById("output11") as HTMLDivElement |
+          null;<br />
+          if (output11) {<br />
+          output11.innerHTML = `find first and last digit of a number ${number}
+          is : `;<br />
+          }<br />
+          if (number && output11) {<br />
+          output11.innerHTML += `first digit is ${number.charAt(0)} and last
+          digit is ${number.charAt(number.length-1)}`;<br />
+          }<br />
+        </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output11"> </code>
+      </p>
+      <button onclick="Question11()">
+        find first and last digit of a number
+      </button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+
+    <div>
+      <h2>
+        12. Write a ts program to find sum of first and last digit of a number.
+      </h2>
+      <p>
+        <code>
+          let number: string | null = prompt("Please Enter Number");<br />
+          let output12 = document.getElementById("output12") as HTMLDivElement |
+          null;<br />
+          if (output12) {<br />
+          output12.innerHTML = `sum of first and last digit of a number
+          ${number} is : `;<br />
+          }<br />
+          if (number && output12) {<br />
+          output12.innerHTML += +(number.charAt(0)) +
+          +(number.charAt(number.length-1));<br />
+          }<br />
+        </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output12"> </code>
+      </p>
+      <button onclick="Question12()">
+        find sum of first and last digit of a number
+      </button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+
+    <div>
+      <h2>13. Write a ts program to swap first and last digits of a number.</h2>
+      <p>
+        <code> </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output13"> </code>
+      </p>
+      <button onclick="Question13()">
+        swap first and last digits of a number
+      </button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+
+    <div>
+      <h2>14. Write a ts program to calculate sum of digits of a number.</h2>
+      <p>
+        <code>
+          let number: string | null = prompt("Please Enter Number");<br />
+          let output14 = document.getElementById("output14") as HTMLDivElement |
+          null;<br />
+          if (number) {<br />
+          let num: number = parseInt(number);<br />
+          let sum: number = 0;<br />
+          while (num > 0) {<br />
+          if (output14) {<br />
+          sum = sum + (num % 10);<br />
+          num = num / 10;<br />
+          output14.innerHTML = `calculate sum of digits of a number is
+          :${Math.floor(sum )}`<br />; }<br />
+          }<br />
+          }<br />
+        </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output14"> </code>
+      </p>
+      <button onclick="Question14()">sum of digits of a number</button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+
+    <div>
+      <h2>
+        15. Write a ts program to calculate product of digits of a number.
+      </h2>
+      <p>
+        <code>
+          let number: string | null = prompt("Please Enter Number");<br />
+          let output15 = document.getElementById("output15") as HTMLDivElement |
+          null;<br />
+          if (number) {<br />
+          let num: number = parseInt(number);<br />
+          let product: number = 1;<br />
+          while (num != 0) {<br />
+          if (output15) {<br />
+          product = product * (num % 10);<br />
+          num = Math.floor(num / 10);<br />
+          output15.innerHTML = `product of digits of a number is
+          :${product}`;<br />
+          }<br />
+          }<br />
+          }<br />
+        </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output15"> </code>
+      </p>
+      <button onclick="Question15()">
+        calculate product of digits of a number
+      </button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+
+    <div>
+      <h2>16. Write a ts program to enter a number and print its reverse.</h2>
+      <p>
+        <code>
+          let number: string | null = prompt("Please Enter Number");<br />
+          let output16 = document.getElementById("output16") as HTMLDivElement |
+          null;<br />
+          if (number) {<br />
+          let num: number = parseInt(number);<br />
+          let reverse: number = 0;<br />
+          while (num != 0) {<br />
+          if (output16) {<br />
+          reverse = reverse * 10 + (num % 10);<br />
+          num = Math.floor(num / 10);<br />
+          output16.innerHTML = `reverse of digits of a number ${number} is
+          :${reverse}`;<br />
+          }<br />
+          }<br />
+          }<br />
+        </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output16"> </code>
+      </p>
+      <button onclick="Question16()">
+        enter a number and print its reverse
+      </button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+
+    <div>
+      <h2>
+        17. Write a ts program to check whether a number is palindrome or not.
+      </h2>
+      <p>
+        <code>
+          let number: string | null = prompt("Please Enter Number");<br />
+          let output17 = document.getElementById("output17") as HTMLDivElement |
+          null;<br />
+          if (number) {<br />
+          let num: number = parseInt(number);<br />
+          let reverse: number = 0;<br />
+          while (num != 0) {<br />
+          if (output17) {<br />
+          reverse = reverse * 10 + (num % 10);<br />
+          num = Math.floor(num / 10);<br />
+          if (reverse == +number) {<br />
+          output17.innerHTML = `${number} is palindrome : ${reverse}`;<br />
+          } else {<br />
+          output17.innerHTML = `${number} is not palindrome : ${reverse}`;<br />
+          }<br />
+          }<br />
+          }<br />
+          } <br />
+        </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output17"> </code>
+      </p>
+      <button onclick="Question17()">number is palindrome or not</button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+
+    <div>
+      <h2>
+        18. Write a ts program to find frequency of each digit in a given
+        integer.
+      </h2>
+      <p>
+        <code> </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output18"> </code>
+      </p>
+      <button onclick="Question18()">
+        frequency of each digit in a given integer
+      </button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+
+    <div>
+      <h2>19. Write a ts program to enter a number and print it in words.</h2>
+      <p>
+        <code> </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output19"> </code>
+      </p>
+      <button onclick="Question19()">
+        enter a number and print it in words
+      </button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+
+    <div>
+      <h2>
+        20. Write a ts program to print all ASCII character with their values.
+      </h2>
+      <p>
+        <code>
+          let output20 = document.getElementById("output20") as HTMLDivElement |
+          null;<br />
+          if (output20) {<br />
+          for (let i = 0; i <= 255; i++) {<br />
+          output20.innerHTML += `ASCII value of character ${String.fromCharCode(
+          i )} is : ${i}<br />`;<br />
+          }<br />
+          }<br />
+        </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output20"> </code>
+      </p>
+      <button onclick="Question20()">
+        print all ASCII character with their values
+      </button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+
+    <div>
+      <h2>21. Write a ts program to find power of a number using for loop.</h2>
+      <p>
+        <code>
+          let base1: string | null = prompt("Please Enter Base");<br />
+          let exponent1: string | null = prompt("Please Enter Exponent");<br />
+          let power: number = 1;<br />
+          let output21 = document.getElementById("output21") as HTMLDivElement |
+          null;<br />
+          if (output21 && base1 && exponent1) {<br />
+          let base = parseInt(base1);<br />
+          let exponent = parseInt(exponent1);<br />
+          for (let i = 1; i <= exponent; i++) {<br />
+          power = power * base;<br />
+          }<br />
+          output21.innerHTML = `power of a number ${base} ^ ${exponent} is :
+          ${power}<br />`;<br />
+          }<br />
+        </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output21"> </code>
+      </p>
+      <button onclick="Question21()">
+        find power of a number using for loop
+      </button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+
+    <div>
+      <h2>22. Write a ts program to find all factors of a number.</h2>
+      <p>
+        <code>
+          let number: string | null = prompt("Please Enter Number");<br />
+          let output22 = document.getElementById("output22") as HTMLDivElement |
+          null;<br />
+          if (number && output22) {<br />
+          output22.innerHTML = `The factors of ${number} is : `;<br />
+          let num: number = parseInt(number);<br />
+          for (let i = 1; i <= num; i++) {<br />
+          if (num % i == 0) {<br />
+          output22.innerHTML += ` ${i}`;<br />
+          }<br />
+          }<br />
+          }<br />
+        </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output22"> </code>
+      </p>
+      <button onclick="Question22()">find all factors of a number</button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+    <div>
+      <h2>23. Write a ts program to calculate factorial of a number.</h2>
+      <p>
+        <code> 
+          let number: string | null = prompt("Please Enter Number");<br>
+          let output23 = document.getElementById("output23") as HTMLDivElement | null;<br>
+          if (number && output23) {<br>
+            let num: number = parseInt(number);<br>
+            let fact: number = 1;<br>
+            if (num < 0)<br>
+              output23.innerHTML = `Error! Factorial of a negative number doesn't exist.`;<br>
+            else<br>
+              for (let i = 1; i <= num; i++) {<br>
+                fact *= i;<br>
+              }<br>
+            output23.innerHTML = `Factorial of ${num} = ${fact}`;<br>
+          }<br>
+        </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output23"> </code>
+      </p>
+      <button onclick="Question23()">calculate factorial of a number</button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+
+    <div>
+      <h2>24. Write a ts program to find HCF (GCD) of two numbers.</h2>
+      <p>
+        <code>
+          let number1: string | null = prompt("Please Enter 1st Number");<br>
+          let number2: string | null = prompt("Please Enter 2nd Number");<br>
+          let output24 = document.getElementById("output24") as HTMLDivElement | null;<br>
+          if (output24 && number1 && number2) {<br>
+            let num1 = parseInt(number1);<br>
+            let num2 = parseInt(number2);<br>
+            for (let i = 1; i <= num1 && i <= num2; i++) {<br>
+              if (num1 % i == 0 && num2 % i == 0) {<br>
+                output24.innerHTML = `HCF (GCD) of two numbers ${num1} and ${num2} is  : (GCD) = ${i}`;<br>
+              }<br>
+            }<br>
+          }  <br>
+        </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output24"> </code>
+      </p>
+      <button onclick="Question24()">find HCF (GCD) of two numbers</button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+    <div>
+      <h2>25. Write a ts program to find LCM of two numbers.</h2>
+      <p>
+        <code>
+          let number1: string | null = prompt("Please Enter 1st Number");<br>
+          let number2: string | null = prompt("Please Enter 2nd Number");<br>
+          let output24 = document.getElementById("output24") as HTMLDivElement | null;<br>
+          if (output24 && number1 && number2) {<br>
+            let num1 = parseInt(number1);<br>
+            let num2 = parseInt(number2);<br>
+            for (let i = 1; i <= num1 && i <= num2; i++) {<br>
+              if (num1 % i == 0 && num2 % i == 0) {<br>
+                output25.innerHTML = `LCM of two numbers ${num1} and ${num2} is  : (LCM) = ${(num1 * num2) /i}<br>`;
+                ;<br>
+              }<br>
+            }<br>
+          }  <br>  
+        </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output25"> </code>
+      </p>
+      <button onclick="Question25()">find LCM of two numbers</button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+
+    <div>
+      <h2>
+        26. Write a ts program to check whether a number is Prime number or not.
+      </h2>
+      <p>
+        <code>
+          let number: string | null = prompt("Please Enter Number");<br>
+          let output26 = document.getElementById("output26") as HTMLDivElement | null;<br>
+          if (number && output26) {<br>
+            let num: number = parseInt(number);<br>
+            if (num === 1) {<br>
+              output26.innerHTML = `1 is neither prime nor composite number`;<br>
+            }<br>
+            for (let i = 2; i < num; i++) {<br>
+              if (num % i != 0) {<br>
+                output26.innerHTML = `${number}  is Prime number`;<br>
+              } else {<br>
+                output26.innerHTML = `${number}  is not Prime number`;<br>
+              }<br>
+            }<br>
+          }  <br>
+        </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output26"> </code>
+      </p>
+      <button onclick="Question26()">number is Prime number or not</button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+
+    <div>
+      <h2>27. Write a ts program to print all Prime numbers between 1 to n.</h2>
+      <p>
+        <code> </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output27"> </code>
+      </p>
+      <button onclick="Question27()">all Prime numbers between 1 to n</button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+
+    <div>
+      <h2>
+        28. Write a ts program to find sum of all prime numbers between 1 to n.
+      </h2>
+      <p>
+        <code> </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output28"> </code>
+      </p>
+      <button onclick="Question28()">
+        find sum of all prime numbers between 1 to n
+      </button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+
+    <div>
+      <h2>29. Write a ts program to find all prime factors of a number.</h2>
+      <p>
+        <code> </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output29"> </code>
+      </p>
+      <button onclick="Question29()">find all prime factors of a number</button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+
+    <div>
+      <h2>
+        30. Write a ts program to check whether a number is Armstrong number or
+        not.
+      </h2>
+      <p>
+        <code> </code>
+      </p>
+      <p>
+        Output : <br />
+        <code id="output30"> </code>
+      </p>
+      <button onclick="Question30()">number is Armstrong number or not</button>
+    </div>
+    <hr />
+    <!-- _______________________________________ -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
